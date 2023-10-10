@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="main-box">
+      <table>
+        <tr>
+          <!-- <th class="result-window" colspan="4"><input readonly type="text" name="" id="inp"></th> -->
+          <th class="result-window" colspan="4" id="inp"></th>
+        </tr>
+        <tr class="signs-column">
+          <th onclick="press('+')">+</th>
+          <th onclick="press('-')">-</th>
+          <th onclick="press('*')">x</th>
+          <th onclick="press('/')">/</th>
+        </tr>
+
+        <tr>
+          <td onclick="press(7)">7</td>
+          <td onclick="press(8)">8</td>
+          <td onclick="press(9)">9</td>
+          <td class="equals-sign" rowspan="4" onclick="calculation()">=</td>
+        </tr>
+        <tr>
+          <td onclick="press(4)">4</td>
+          <td onclick="press(5)">5</td>
+          <td onclick="press(6)">6</td>
+        </tr>
+        <tr>
+          <td onclick="press(1)">1</td>
+          <td onclick="press(2)">2</td>
+          <td onclick="press(3)">3</td>
+        </tr>
+        <tr>
+          <td class="zero-for-radius" onclick="press(0)">0</td>
+          <td onclick="press('.')">.</td>
+          <td onclick="clr()">C</td>
+        </tr>
+      </table>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
